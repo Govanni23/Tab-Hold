@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		5BD17A7E20CC67CC00D6987D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD17A7D20CC67CC00D6987D /* AppDelegate.swift */; };
-		5BD17A8020CC67CC00D6987D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD17A7F20CC67CC00D6987D /* ViewController.swift */; };
+		5BD17A8020CC67CC00D6987D /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD17A7F20CC67CC00D6987D /* PeopleListViewController.swift */; };
 		5BD17A8320CC67CC00D6987D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD17A8120CC67CC00D6987D /* Main.storyboard */; };
 		5BD17A8620CC67CC00D6987D /* Tab_Hold.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BD17A8420CC67CC00D6987D /* Tab_Hold.xcdatamodeld */; };
 		5BD17A8820CC67CD00D6987D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD17A8720CC67CD00D6987D /* Assets.xcassets */; };
 		5BD17A8B20CC67CD00D6987D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD17A8920CC67CD00D6987D /* LaunchScreen.storyboard */; };
+		5BD17A9420CC684C00D6987D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD17A9220CC684C00D6987D /* CustomCell.swift */; };
+		5BD17A9520CC684C00D6987D /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD17A9320CC684C00D6987D /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5BD17A7A20CC67CC00D6987D /* Tab Hold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tab Hold.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD17A7D20CC67CC00D6987D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BD17A7F20CC67CC00D6987D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BD17A7F20CC67CC00D6987D /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
 		5BD17A8220CC67CC00D6987D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BD17A8520CC67CC00D6987D /* Tab_Hold.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tab_Hold.xcdatamodel; sourceTree = "<group>"; };
 		5BD17A8720CC67CD00D6987D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BD17A8A20CC67CD00D6987D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BD17A8C20CC67CD00D6987D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BD17A9220CC684C00D6987D /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		5BD17A9320CC684C00D6987D /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +61,24 @@
 			isa = PBXGroup;
 			children = (
 				5BD17A7D20CC67CC00D6987D /* AppDelegate.swift */,
-				5BD17A7F20CC67CC00D6987D /* ViewController.swift */,
+				5BD17A7F20CC67CC00D6987D /* PeopleListViewController.swift */,
 				5BD17A8120CC67CC00D6987D /* Main.storyboard */,
 				5BD17A8720CC67CD00D6987D /* Assets.xcassets */,
 				5BD17A8920CC67CD00D6987D /* LaunchScreen.storyboard */,
 				5BD17A8C20CC67CD00D6987D /* Info.plist */,
 				5BD17A8420CC67CC00D6987D /* Tab_Hold.xcdatamodeld */,
+				5BD17A9620CC685500D6987D /* Custom Cell */,
 			);
 			path = "Tab Hold";
+			sourceTree = "<group>";
+		};
+		5BD17A9620CC685500D6987D /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5BD17A9220CC684C00D6987D /* CustomCell.swift */,
+				5BD17A9320CC684C00D6987D /* CustomCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +141,7 @@
 			files = (
 				5BD17A8B20CC67CD00D6987D /* LaunchScreen.storyboard in Resources */,
 				5BD17A8820CC67CD00D6987D /* Assets.xcassets in Resources */,
+				5BD17A9520CC684C00D6987D /* CustomCell.xib in Resources */,
 				5BD17A8320CC67CC00D6987D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD17A8020CC67CC00D6987D /* ViewController.swift in Sources */,
+				5BD17A8020CC67CC00D6987D /* PeopleListViewController.swift in Sources */,
 				5BD17A7E20CC67CC00D6987D /* AppDelegate.swift in Sources */,
+				5BD17A9420CC684C00D6987D /* CustomCell.swift in Sources */,
 				5BD17A8620CC67CC00D6987D /* Tab_Hold.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
